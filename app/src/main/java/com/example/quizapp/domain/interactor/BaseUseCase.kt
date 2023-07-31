@@ -1,4 +1,4 @@
-package com.example.quizapp.domain
+package com.example.quizapp.domain.interactor
 
 interface BaseUseCase<out Result> {
 

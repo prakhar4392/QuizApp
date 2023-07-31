@@ -1,10 +1,10 @@
-package com.example.quizapp.presentation
+package com.example.quizapp.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.quizapp.data.Logo
-import com.example.quizapp.domain.GetLogoUseCase
+import com.example.quizapp.data.model.Logo
+import com.example.quizapp.domain.interactor.GetLogoUseCase
 
 class GetLogoViewModel(private val getLogoUseCase: GetLogoUseCase): ViewModel() {
 

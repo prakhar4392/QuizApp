@@ -1,4 +1,4 @@
-package com.example.quizapp.presentation
+package com.example.quizapp.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,10 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bumptech.glide.Glide
-import com.example.quizapp.data.Logo
+import com.example.quizapp.data.model.Logo
 import com.example.quizapp.databinding.ActivityMainBinding
+import com.example.quizapp.presentation.viewmodel.GetLogoViewModel
+import com.example.quizapp.presentation.Util
 import com.example.quizapp.presentation.adapter.ScrambledCharAdapter
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -84,7 +86,7 @@ class QuizActivity : AppCompatActivity() {
 
                 override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                     if(p0==ans){
-                        Util.showSuccessToast("Answer is correct",this@QuizActivity)
+                        Util.showSuccessToast("Answer is correct", this@QuizActivity)
                     }
                 }
 
